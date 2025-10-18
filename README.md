@@ -5,7 +5,9 @@
 It’s designed for book lovers who believe in sharing stories instead of letting books collect dust.
 
 > **Motto:** Exchange → Read → Return → Repeat
+> 
 > 🏁 Motto
+> 
 “Read more. Spend less. Share endlessly.”
 That’s the BookLoop spirit ♻️
 
