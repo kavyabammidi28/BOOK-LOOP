@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Loop — Book List</title>
+  <style>
+    :root {
+      --bg-light: #fce6e3;
+      --primary: #c49a6c;
+      --primary-dark: #8b5e34;
+      --text-main: #491c1c;
+      --text-muted: #7c6a58;
+      --white: #fff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, var(--bg-light), #fff);
+      color: var(--text-main);
+      padding: 50px 30px;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: var(--primary-dark);
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: var(--text-muted);
+      font-size: 16px;
+    }
+
+    .book-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .book-card {
+      background: var(--white);
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(62, 42, 26, 0.1);
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .book-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(139, 94, 52, 0.2);
+    }
+
+    .book-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .book-content {
+      padding: 18px 20px;
+    }
+
+    h3 {
+      color: var(--primary-dark);
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .author {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .genre {
+      font-size: 14px;
+      background: #f8e7d9;
+      color: var(--primary-dark);
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+
+    .status {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--primary-dark);
+    }
+
+    .available {
+      color: green;
+    }
+
+    .exchanged {
+      color: crimson;
+    }
+
+    .cta {
+      display: block;
+      text-align: center;
+      background: var(--primary-dark);
+      color: var(--white);
+      padding: 12px 24px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      width: fit-content;
+      margin: 40px auto 0;
+      transition: 0.3s;
+    }
+
+    .cta:hover {
+      background: var(--primary);
+      transform: translateY(-3px);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Book Listings</h1>
+    <p>Browse and exchange your next great read!</p>
+  </header>
+
+  <section class="book-grid">
+    <div class="book-card">
+      <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" class="book-img" alt="Book Cover">
+      <div class="book-content">
+        <h3>The Silent Patient</h3>
+        <div class="author">by Alex Michaelides</div>
+        <div class="genre">Thriller</div>
+        <div class="status available">Available</div>
+      </div>
+    </div>
+
+    <div class="book-card">
+      <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794" class="book-img" alt="Book Cover">
+      <div class="book-content">
+        <h3>Atomic Habits</h3>
+        <div class="author">by James Clear</div>
+        <div class="genre">Self-Help</div>
+        <div class="status exchanged">Exchanged</div>
+      </div>
+    </div>
+
+    <div class="book-card">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.w32VHhIrBz9MAKiFUDCyKwAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" class="book-img" alt="Book Cover">
+      <div class="book-content">
+        <h3>The Alchemist</h3>
+        <div class="author">by Paulo Coelho</div>
+        <div class="genre">Fiction</div>
+        <div class="status available">Available</div>
+      </div>
+    </div>
+
+    <div class="book-card">
+      <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353" class="book-img" alt="Book Cover">
+      <div class="book-content">
+        <h3>Rich Dad Poor Dad</h3>
+        <div class="author">by Robert Kiyosaki</div>
+        <div class="genre">Finance</div>
+        <div class="status available">Available</div>
+      </div>
+    </div>
+  </section>
+
+  <a href="exchange.html" class="cta">Proceed to Exchange</a>
+</body>
+</html>
