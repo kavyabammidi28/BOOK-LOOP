@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Loop — Categories</title>
+  <style>
+    :root {
+      --bg-light: #fce6e3;
+      --primary: #c49a6c;
+      --primary-dark: #8b5e34;
+      --text-main: #491c1c;
+      --text-muted: #7c6a58;
+      --white: #fff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, var(--bg-light), #fff);
+      min-height: 100vh;
+      padding: 50px;
+      color: var(--text-main);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: var(--primary-dark);
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: var(--text-muted);
+      font-size: 16px;
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .category-card {
+      background: var(--white);
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(62, 42, 26, 0.1);
+      text-align: center;
+      padding: 30px 20px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .category-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(139, 94, 52, 0.2);
+    }
+
+    .icon {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      color: var(--primary-dark);
+      margin-bottom: 6px;
+    }
+
+    .cta {
+      display: block;
+      text-align: center;
+      background: var(--primary-dark);
+      color: var(--white);
+      padding: 12px 24px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      width: fit-content;
+      margin: 40px auto 0;
+      transition: 0.3s;
+    }
+
+    .cta:hover {
+      background: var(--primary);
+      transform: translateY(-3px);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Explore Book Categories</h1>
+    <p>Find your next great read — from timeless classics to modern favorites!</p>
+  </header>
+
+  <section class="category-grid">
+    <div class="category-card">
+      <div class="icon">📖</div>
+      <h3>Fiction</h3>
+      <p>Dive into stories that spark imagination.</p>
+    </div>
+
+    <div class="category-card">
+      <div class="icon">🧠</div>
+      <h3>Science</h3>
+      <p>Explore discoveries and innovations.</p>
+    </div>
+
+    <div class="category-card">
+      <div class="icon">💼</div>
+      <h3>Business</h3>
+      <p>Learn strategies, success, and leadership.</p>
+    </div>
+
+    <div class="category-card">
+      <div class="icon">❤️</div>
+      <h3>Romance</h3>
+      <p>Feel the warmth of love and connection.</p>
+    </div>
+
+    <div class="category-card">
+      <div class="icon">🕵️‍♀️</div>
+      <h3>Mystery</h3>
+      <p>Unravel thrilling secrets and suspense.</p>
+    </div>
+
+    <div class="category-card">
+      <div class="icon">🌍</div>
+      <h3>Travel</h3>
+      <p>Journey through places and experiences.</p>
+    </div>
+
+    <div class="category-card">
+      <div class="icon">🧘‍♀️</div>
+      <h3>Self-Help</h3>
+      <p>Grow, reflect, and find motivation.</p>
+    </div>
+
+    <div class="category-card">
+      <div class="icon">👶</div>
+      <h3>Children</h3>
+      <p>Colorful stories for young readers.</p>
+    </div>
+  </section>
+
+  <a href="booklist.html" class="cta">View Books</a>
+</body>
+</html>
