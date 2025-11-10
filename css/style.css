@@ -1,1 +1,144 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #ff6b6b, #f8f9ff);
+  color: #333;
+  height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  background: #f8f9ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 50px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.3rem;
+  color: #ff5252;
+}
+
+.logo img {
+  width: 30px;
+  height: 30px;
+}
+
+.navbar nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+
+.navbar nav a:hover {
+  color: #4a47ff;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  color: white;
+  padding-top: 130px;
+  padding-bottom: 80px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 8px;
+}
+
+/* Search Box */
+.search-box {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 50px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.search-box input {
+  width: 80%;
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  border-radius: 50px 0 0 50px;
+  font-size: 1rem;
+}
+
+.search-box button {
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0 50px 50px 0;
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  background: #ff5252;
+}
+
+/* Results Section */
+.results {
+  background: white;
+  width: 85%;
+  margin: 30px auto;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.results h2 {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.book-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .search-box {
+    width: 80%;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .navbar {
+    padding: 15px 20px;
+  }
+}
